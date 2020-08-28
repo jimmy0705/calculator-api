@@ -16,11 +16,7 @@ app.use(bodyParser.json())
 // If the body parameters contain Strings then you need to give a message: "invalid data types"
 // If the body parameters contain values above 10M(10 lakhs) then you need to give the message: "Overflow" 
 
-// {
-//     status: “success/failure/error”,
-//     message: “the difference of given two number”,
-//     sum:
-//     } 
+
 
 app.get('/', (req, res) => {
   
