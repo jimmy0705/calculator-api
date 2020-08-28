@@ -87,12 +87,12 @@ app.post('/sub',(req,res)=>{
      
         res.json(data)
      }
-     else if(num1 >1000000 || num2 >1000000){
+     else if(num1 <1000000 || num2 <1000000){
      
          const data = 
          {
              status: "error",
-             message: "overflow"
+             message: "Underflow"
              
              } 
      
@@ -103,7 +103,7 @@ app.post('/sub',(req,res)=>{
       const data = 
       {
           status: "error",
-          message: "the substraction of given two number",
+          message: "The difference of given two number",
           sum: num1-num2
           
           } 
@@ -144,7 +144,7 @@ app.post('/sub',(req,res)=>{
   const data = 
   {
       status: "error",
-      message: "the multiplication of given two number",
+      message: "The product of given numbers",
       sum: num1*num2
       
       } 
@@ -169,12 +169,12 @@ app.post('/sub',(req,res)=>{
  
     res.json(data)
  }
- else if(num1 >1000000 || num2 >1000000){
+ else if(num2 ===0){
  
      const data = 
      {
          status: "error",
-         message: "overflow"
+         message: "Cannot divide by zero"
          
          } 
  
@@ -185,7 +185,7 @@ app.post('/sub',(req,res)=>{
   const data = 
   {
       status: "error",
-      message: "the sub of given two number",
+      message: "The division of given numbers",
       sum: num1/num2
       
       } 
